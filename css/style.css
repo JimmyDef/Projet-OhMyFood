@@ -321,7 +321,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header, footer h2 {
+header,
+footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
 }
@@ -336,6 +337,47 @@ h1 {
 
 p {
   font-size: 18px;
+}
+
+input {
+  font-weight: 500;
+}
+
+header {
+  height: 65px;
+  text-align: center;
+}
+header img {
+  width: 160px;
+  padding-top: 20px;
+}
+
+.locate-me {
+  height: 50px;
+  width: 100%;
+  background: #eaeaea;
+  box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
+  -webkit-box-shadow: 0px 8px 6px -6px rgba 148, 136, 136, 0.75 inset;
+  -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
+  display: flex;
+  justify-content: center;
+}
+.locate-me label {
+  display: flex;
+  align-items: center;
+}
+.locate-me label input {
+  height: 100%;
+  width: 160px;
+  border: none;
+  text-align: center;
+  background: #eaeaea;
+  box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
+  -webkit-box-shadow: 0px 8px 6px -6px rgba 148, 136, 136, 0.75 inset;
+  -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
+}
+.locate-me label input:focus {
+  background-color: rgba(236, 161, 69, 0.26);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.locate-me {
+  height: 50px;
+  width: 100%;
+  @include shadowed-background;
+  display: flex;
+  justify-content: center;
+  & label {
+    display: flex;
+    align-items: center;
+    & input {
+      height: 100%;
+      width: 160px;
+      border: none;
+      text-align: center;
+      @include shadowed-background;
+      &:focus {
+        background-color: $color-background-focus;
+      }
+    }
+  }
+}
