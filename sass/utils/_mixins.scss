@@ -4,3 +4,24 @@
   -webkit-box-shadow: 0px 8px 6px -6px rgba (148, 136, 136, 0.75) inset;
   -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
 }
+
+@mixin gradient-background {
+  background: $color-primary;
+  background: -moz-linear-gradient(
+    355deg,
+    $color-primary 0%,
+    $color-secondary 100%
+  );
+  background: -webkit-linear-gradient(
+    355deg,
+    $color-primary 0%,
+    $color-secondary 100%
+  );
+  background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%);
+}
+
+@mixin box-shadow-light-blur {
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+}

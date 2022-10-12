@@ -343,8 +343,58 @@ input {
   font-weight: 500;
 }
 
+.btn-pink {
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: #9356dc;
+  background: -moz-linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+}
+
+.functioning__btn {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  text-align: left;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+}
+.functioning__btn .functioning__number {
+  position: absolute;
+  top: 24px;
+  left: -14px;
+  width: 25px;
+  height: 25px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+}
+.functioning__btn i {
+  margin: 0 20px 0 33px;
+}
+.functioning__btn:hover {
+  background: #f2eafb;
+}
+.functioning__btn:hover i {
+  color: #9356dc;
+}
+
 header {
   height: 65px;
+  padding: 0 20px;
   text-align: center;
 }
 header img {
@@ -352,7 +402,11 @@ header img {
   padding-top: 20px;
 }
 
-.locate-me {
+section:not(.locate-restaurant) {
+  padding: 20px;
+}
+
+.locate-restaurant__form {
   height: 50px;
   width: 100%;
   background: #eaeaea;
@@ -362,11 +416,11 @@ header img {
   display: flex;
   justify-content: center;
 }
-.locate-me label {
+.locate-restaurant__form label {
   display: flex;
   align-items: center;
 }
-.locate-me label input {
+.locate-restaurant__form label input {
   height: 100%;
   width: 160px;
   border: none;
@@ -376,8 +430,31 @@ header img {
   -webkit-box-shadow: 0px 8px 6px -6px rgba 148, 136, 136, 0.75 inset;
   -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
 }
-.locate-me label input:focus {
+.locate-restaurant__form label input:focus {
   background-color: rgba(236, 161, 69, 0.26);
+}
+
+.functioning__form {
+  padding: 5px 0 0 10px;
+}
+
+.locate-restaurant {
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.locate-restaurant h1 {
+  padding: 20px 50px 0px;
+}
+.locate-restaurant p {
+  margin-bottom: 30px;
+}
+.locate-restaurant button {
+  margin-bottom: 60px;
+}
+
+.functioning h2 {
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

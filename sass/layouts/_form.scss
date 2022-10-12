@@ -1,4 +1,4 @@
-.locate-me {
+.locate-restaurant__form {
   height: 50px;
   width: 100%;
   @include shadowed-background;
@@ -18,4 +18,8 @@
       }
     }
   }
+}
+
+.functioning__form {
+  padding: 5px 0 0 10px;
 }
