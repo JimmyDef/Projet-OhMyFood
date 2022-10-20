@@ -11,7 +11,10 @@
 @import './layouts/nav';
 @import './layouts/container';
 @import './layouts/form';
+@import './layouts/footer';
 
 @import './pages/index';
-// @import "./pages/about";
-// @import "./pages/project";
+@import './pages/menu_la_note_enchantee.scss';
+@import './pages/menu_a_la_francaise.scss';
+@import './pages/menu_la_palette_du_gout.scss';
+@import './pages/menu_le_delice_des_sens.scss';

@@ -1,0 +1,28 @@
+footer {
+  background-color: $color-background-dark;
+  color: white;
+}
+
+.footer {
+  padding: 25px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      margin: 10px 0;
+      a {
+        color: white;
+        &:hover {
+          color: $color-tertiary;
+        }
+        i {
+          padding-right: 10px;
+          &.fa-utensils {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}
