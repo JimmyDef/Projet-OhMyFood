@@ -5,9 +5,12 @@
   color: white;
   border: none;
   border-radius: 25px;
-  @include gradient-background;
-  @include box-shadow-light-blur;
+  background: $color-primary;
+  background: $color-background-gradient;
+  box-shadow: $box-shadow;
+  // transition: ease-in-out 400ms;
   &:hover {
+    @include gradient-background-light;
   }
 }
 
@@ -19,7 +22,7 @@
   margin-bottom: 25px;
   border-radius: 25px;
   border: none;
-  @include box-shadow-light-blur;
+  box-shadow: $box-shadow;
   .functioning-form__number {
     position: absolute;
     top: 24px;

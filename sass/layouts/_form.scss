@@ -4,10 +4,13 @@
   @include shadowed-background;
   display: flex;
   justify-content: center;
-  & label {
+  label {
     display: flex;
     align-items: center;
-    & input {
+    i {
+      margin-right: 3px;
+    }
+    input {
       height: 100%;
       width: 160px;
       border: none;

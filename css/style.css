@@ -48,13 +48,15 @@ input {
   border: none;
   border-radius: 25px;
   background: #9356dc;
-  background: -moz-linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
-  background: -webkit-linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
   background: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
-  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
 }
+.btn-pink:hover {
+  background: #9458dc;
+  background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
 .functioning-form__box {
   position: relative;
   width: 100%;
@@ -63,9 +65,7 @@ input {
   margin-bottom: 25px;
   border-radius: 25px;
   border: none;
-  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
 }
 .functioning-form__box .functioning-form__number {
   position: absolute;
@@ -116,14 +116,15 @@ header img {
   width: 100%;
   background: #eaeaea;
   box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
-  -webkit-box-shadow: 0px 8px 6px -6px rgba 148, 136, 136, 0.75 inset;
-  -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
   display: flex;
   justify-content: center;
 }
 .locate-restaurant__form label {
   display: flex;
   align-items: center;
+}
+.locate-restaurant__form label i {
+  margin-right: 3px;
 }
 .locate-restaurant__form label input {
   height: 100%;
@@ -132,8 +133,6 @@ header img {
   text-align: center;
   background: #eaeaea;
   box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
-  -webkit-box-shadow: 0px 8px 6px -6px rgba 148, 136, 136, 0.75 inset;
-  -moz-box-shadow: 0px 8px 6px -6px rgba(148, 136, 136, 0.75) inset;
 }
 .locate-restaurant__form label input:focus {
   background-color: rgba(236, 161, 69, 0.26);
@@ -191,6 +190,9 @@ footer {
 
 .restaurants-list {
   background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .restaurants-list h2 {
   margin-bottom: 20px;
@@ -202,9 +204,7 @@ footer {
   height: 250px;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
 }
 .card-restaurant img {
   width: 100%;

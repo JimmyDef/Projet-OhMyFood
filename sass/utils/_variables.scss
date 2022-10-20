@@ -1,9 +1,16 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+
 $color-background: #eaeaea;
 $color-background-light: #f6f6f6;
 $color-background-dark: #353535;
 $color-background-focus: rgba(236, 161, 69, 0.26);
+$color-background-gradient: linear-gradient(
+  355deg,
+  $color-primary 0%,
+  $color-secondary 100%
+);
+$box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
 $color-tag-new: #008766;
 $color-background-tag-new: #99e2d0;
