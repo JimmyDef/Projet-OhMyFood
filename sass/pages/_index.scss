@@ -69,15 +69,14 @@
     color: $color-tag-new;
     background-color: $color-background-tag-new;
   }
+
+  &__heart-icon {
+    height: 100px;
+    width: 100px;
+  }
 }
-// i {
-// height: 100%;
-// width: 100%;
-// background-color: red;
-// overflow: hidden;
-// }
-// .card-restaurant__heart {
-//   height: 50px;
-//   width: 50px;
-//   background-color: red;
-// }
+#heart {
+  stroke: red;
+  fill: $color-background-gradient;
+  stroke-width: '55';
+}

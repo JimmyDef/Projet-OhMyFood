@@ -54,46 +54,47 @@ input {
 .btn-pink:hover {
   background: #9458dc;
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
-  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.6);
 }
 
 .functioning-form__box {
   position: relative;
   width: 100%;
   height: 75px;
-  text-align: left;
+}
+.functioning-form__box input {
+  width: 100%;
+  height: 100%;
+  border: solid black 2px;
   margin-bottom: 25px;
   border-radius: 25px;
   border: none;
   box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
+  background-color: #f6f6f6;
 }
-.functioning-form__box .functioning-form__number {
+.functioning-form__box input:hover {
+  background: #f2eafb;
+}
+.functioning-form__box input:hover + label > i {
+  color: #9356dc;
+}
+.functioning-form__box label {
   position: absolute;
+  display: flex;
   top: 24px;
   left: -14px;
   width: 25px;
   height: 25px;
+}
+.functioning-form__box label span {
   padding: 4px 8px;
   border-radius: 50%;
   background-color: #9356dc;
   color: white;
 }
-.functioning-form__box .functioning-form__btn {
-  height: 100%;
-  width: 100%;
-  text-align: start;
-  border: none;
-  border-radius: 25px;
-  background-color: #f6f6f6;
-}
-.functioning-form__box .functioning-form__btn:hover {
-  background: #f2eafb;
-}
-.functioning-form__box i {
-  margin: 0 20px 0 33px;
-}
-.functioning-form__box:hover i {
-  color: #9356dc;
+.functioning-form__box label i {
+  margin-left: 40px;
+  padding-top: 13px;
 }
 
 header {
@@ -136,10 +137,6 @@ header img {
 }
 .locate-restaurant__form label input:focus {
   background-color: rgba(236, 161, 69, 0.26);
-}
-
-.functioning-form {
-  padding: 5px 0 0 10px;
 }
 
 footer {
@@ -235,6 +232,16 @@ footer {
   text-align: center;
   color: #008766;
   background-color: #99e2d0;
+}
+.card-restaurant__heart-icon {
+  height: 100px;
+  width: 100px;
+}
+
+#heart {
+  stroke: red;
+  fill: linear-gradient(355deg, #9356dc 0%, #ff79da 100%);
+  stroke-width: "55";
 }
 
 /*# sourceMappingURL=style.css.map */

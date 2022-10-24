@@ -40,24 +40,26 @@
 
         <form class="functioning-form">
           <div class="functioning-form__box">
-            <div class="functioning-form__number">1</div>
-            <button class="functioning-form__btn">
-              <i class="fa-solid fa-mobile-screen-button fa-lg"></i> Choisissez
-              un restaurant
-            </button>
+            <input
+              id="restaurant-choice"
+              type="button"
+              class="functioning-form__btn"
+              value="Choisissez un restaurant" />
+            <label for="restaurant-choice" class="functioning-form__label">
+              <span class="functioning-form__number">1</span>
+              <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+            </label>
           </div>
-          <div class="functioning-form__box">
+          <!-- <div class="functioning-form__box">
             <div class="functioning-form__number">2</div>
-            <button class="functioning-form__btn">
-              <i class="fa-solid fa-list-ul fa-lg"></i> Composez votre menu
-            </button>
+            <input type="button" class="functioning-form__btn" />
+            <i class="fa-solid fa-list-ul fa-lg"></i> Composez votre menu
           </div>
           <div class="functioning-form__box">
             <div class="functioning-form__number">3</div>
-            <button class="functioning-form__btn">
-              <i class="fa-solid fa-store fa-lg"></i> Déguster au restaurant
-            </button>
-          </div>
+            <input type="button" class="functioning-form__btn" />
+            <i class="fa-solid fa-store fa-lg"></i> Déguster au restaurant
+          </div> -->
         </form>
       </section>
       <section class="restaurants-list">
@@ -72,9 +74,16 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <i class="fa-regular fa-heart fa-xl">
-                <div class="card-restaurant__heart"></div>
-              </i>
+              <div class="card-restaurant__box-icon">
+                <svg width="30" height="30" version="1.1" viewBox="0 0 800 800">
+                  <g fill="" stroke-width="55" stroke="" id="heart">
+                    <path
+                      d="M398.6 243.4C623.4 19.6 833.6 351 400 700 -33.6 351 176.6 19.6 398.6 243.4Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+              </div>
             </div>
             <div class="card-restaurant__tag-new">Nouveau</div>
           </a>
