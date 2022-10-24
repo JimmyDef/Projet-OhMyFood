@@ -4,12 +4,12 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 
 // Variables différents background
-$color-background: #eaeaea;
-$color-background-light: #f6f6f6;
-$color-background-dark: #353535;
-$color-background-focus: rgba(236, 161, 69, 0.26);
-$color-background-gradient: linear-gradient(
-  355deg,
+$color-bg: #eaeaea;
+$color-bg-light: #f6f6f6;
+$color-bg-dark: #353535;
+$color-bg-focus: rgba(236, 161, 69, 0.26);
+$color-bg-gradient: linear-gradient(
+  0deg,
   $color-primary 0%,
   $color-secondary 100%
 );
@@ -20,4 +20,4 @@ $box-shadow-darker: 0px 5px 9px 0px rgb(196, 196, 196);
 
 // variables restaurant nouveau
 $color-tag-new: #008766;
-$color-background-tag-new: #99e2d0;
+$color-bg-tag-new: #99e2d0;

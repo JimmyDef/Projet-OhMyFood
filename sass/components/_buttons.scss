@@ -6,17 +6,17 @@
   border: none;
   border-radius: 25px;
   background: $color-primary;
-  background: $color-background-gradient;
+  background: $color-bg-gradient;
   box-shadow: $box-shadow-darker;
   transition: all ease-in-out 300ms;
   &:hover {
     transform: scale(1.05);
-    @include btn-bckgrnd-box-shadow;
+    @include btn-bg-box-shadow;
   }
 }
 
 // Bouton fonctionnement
-.functioning-form__btn {
+.functioning__btn {
   display: block;
   position: relative;
   margin: 0 auto 25px;
@@ -32,7 +32,7 @@
       color: $color-primary;
     }
   }
-  .functioning-form__number {
+  .functioning__number {
     position: absolute;
     top: 24px;
     left: -14px;

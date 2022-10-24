@@ -2,7 +2,7 @@
 .locate-restaurant {
   margin-bottom: 20px;
   text-align: center;
-  background-color: $color-background-light;
+  background-color: $color-bg-light;
   h1 {
     padding: 20px 50px 0px;
   }
@@ -20,7 +20,7 @@
   }
 }
 .restaurants-list {
-  background-color: $color-background-light;
+  background-color: $color-bg-light;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -65,6 +65,6 @@
     border-radius: 5px;
     text-align: center;
     color: $color-tag-new;
-    background-color: $color-background-tag-new;
+    background-color: $color-bg-tag-new;
   }
 }

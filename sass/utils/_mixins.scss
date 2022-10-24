@@ -1,15 +1,9 @@
 @mixin shadowed-background {
-  background: $color-background;
+  background: $color-bg;
   box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
 }
 
-// @mixin gradient-background {
-//   background: $color-primary;
-//   background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%);
-//   $color-background-gradient
-// }
-
-@mixin btn-bckgrnd-box-shadow {
+@mixin btn-bg-box-shadow {
   background: lighten($color-primary, 0.5%);
   background: linear-gradient(
     355deg,

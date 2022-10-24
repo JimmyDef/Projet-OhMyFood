@@ -1,0 +1,26 @@
+.heart-box {
+  position: relative;
+  width: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  i {
+    position: absolute;
+    font-size: 25px;
+    transition: scale ease-out 250ms;
+  }
+
+  &__full {
+    scale: 0;
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover {
+    .heart-box__full {
+      scale: 1.08;
+    }
+  }
+}
