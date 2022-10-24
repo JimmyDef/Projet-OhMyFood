@@ -7,51 +7,44 @@
   border-radius: 25px;
   background: $color-primary;
   background: $color-background-gradient;
-  box-shadow: $box-shadow;
-  // transition: ease-in-out 400ms;
+  box-shadow: $box-shadow-darker;
+  transition: all ease-in-out 300ms;
   &:hover {
-    @include gradient-background-light;
+    transform: scale(1.05);
+    @include btn-bckgrnd-box-shadow;
   }
 }
 
-.functioning-form__box {
+// Bouton fonctionnement
+.functioning-form__btn {
+  display: block;
   position: relative;
-  width: 100%;
+  margin: 0 auto 25px;
+  width: 95%;
   height: 75px;
   text-align: left;
-  margin-bottom: 25px;
   border-radius: 25px;
   border: none;
   box-shadow: $box-shadow;
+  &:hover {
+    background: lighten($color-primary, 35);
+    i {
+      color: $color-primary;
+    }
+  }
   .functioning-form__number {
     position: absolute;
     top: 24px;
     left: -14px;
     width: 25px;
     height: 25px;
-    padding: 4px 8px;
+    padding: 5px 8px;
     border-radius: 50%;
     background-color: $color-primary;
     color: white;
   }
-  .functioning-form__btn {
-    height: 100%;
-    width: 100%;
-    text-align: start;
-    border: none;
-    border-radius: 25px;
-    background-color: $color-background-light;
-    &:hover {
-      background: lighten($color-primary, 35);
-    }
-  }
 
   i {
-    margin: 0 20px 0 33px;
-  }
-  &:hover {
-    i {
-      color: $color-primary;
-    }
+    margin: 0 20px 0 35px;
   }
 }

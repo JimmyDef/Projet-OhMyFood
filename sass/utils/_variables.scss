@@ -1,7 +1,9 @@
+// Variables couleurs principales
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 
+// Variables différents background
 $color-background: #eaeaea;
 $color-background-light: #f6f6f6;
 $color-background-dark: #353535;
@@ -11,6 +13,11 @@ $color-background-gradient: linear-gradient(
   $color-primary 0%,
   $color-secondary 100%
 );
-$box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.15);
+
+// variables pour box-shadow
+$box-shadow: 0px 5px 9px 0px rgb(226, 225, 225);
+$box-shadow-darker: 0px 5px 9px 0px rgb(196, 196, 196);
+
+// variables restaurant nouveau
 $color-tag-new: #008766;
 $color-background-tag-new: #99e2d0;
