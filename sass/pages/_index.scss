@@ -15,19 +15,22 @@
 }
 
 .functioning {
+  padding: 50px 20px;
   h2 {
     margin-bottom: 25px;
   }
 }
 .restaurants-list {
+  padding: 50px 0;
   background-color: $color-bg-light;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  h2 {
-    margin-bottom: 20px;
+  &__container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
+
 .card-restaurant {
   position: relative;
   width: 100%;

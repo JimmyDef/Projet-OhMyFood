@@ -50,10 +50,10 @@ input {
   background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   box-shadow: 0px 5px 9px 0px rgb(196, 196, 196);
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 350ms;
 }
 .btn-pink:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   background: #9458dc;
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
   box-shadow: 0px 5px 9px 0px rgb(138, 138, 138);
@@ -63,7 +63,7 @@ input {
   display: block;
   position: relative;
   margin: 0 auto 25px;
-  width: 95%;
+  width: 96%;
   height: 75px;
   text-align: left;
   border-radius: 25px;
@@ -71,7 +71,7 @@ input {
   box-shadow: 0px 5px 9px 0px rgb(226, 225, 225);
 }
 .functioning__btn:hover {
-  background: #f2eafb;
+  background: #e9ddf8;
 }
 .functioning__btn:hover i {
   color: #9356dc;
@@ -125,8 +125,9 @@ header img {
 }
 
 .functioning,
-.restaurants-list {
-  padding: 50px 20px;
+.restaurants-list__container {
+  max-width: 992px;
+  margin: auto;
 }
 
 .locate-restaurant__form {
@@ -152,9 +153,6 @@ header img {
   background: #eaeaea;
   box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
 }
-.locate-restaurant__form label input:focus {
-  background-color: rgba(236, 161, 69, 0.26);
-}
 
 footer {
   background-color: #353535;
@@ -162,7 +160,9 @@ footer {
 }
 
 .footer {
-  padding: 25px;
+  max-width: 992px;
+  margin: auto;
+  padding: 25px 25px 40px;
 }
 .footer h2 {
   margin-bottom: 20px;
@@ -198,18 +198,22 @@ footer {
   margin-bottom: 60px;
 }
 
+.functioning {
+  padding: 50px 20px;
+}
 .functioning h2 {
   margin-bottom: 25px;
 }
 
 .restaurants-list {
+  padding: 50px 0;
   background-color: #f6f6f6;
+}
+.restaurants-list__container {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-.restaurants-list h2 {
-  margin-bottom: 20px;
+  gap: 25px;
 }
 
 .card-restaurant {
@@ -249,6 +253,39 @@ footer {
   text-align: center;
   color: #008766;
   background-color: #99e2d0;
+}
+
+@media screen and (min-width: 768px) {
+  .functioning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .functioning__btn {
+    margin: auto;
+    width: 30%;
+  }
+  .functioning__btn i {
+    margin: 0 15px 0 25px;
+  }
+  .functioning h2 {
+    width: 100%;
+  }
+  .restaurants-list__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants-list__container .card-restaurant {
+    width: 45%;
+  }
+  .restaurants-list__container h2 {
+    width: 100%;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

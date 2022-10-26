@@ -8,9 +8,9 @@
   background: $color-primary;
   background: $color-bg-gradient;
   box-shadow: $box-shadow-darker;
-  transition: all ease-in-out 300ms;
+  transition: all ease-in-out 350ms;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
     @include btn-bg-box-shadow;
   }
 }
@@ -20,14 +20,14 @@
   display: block;
   position: relative;
   margin: 0 auto 25px;
-  width: 95%;
+  width: 96%;
   height: 75px;
   text-align: left;
   border-radius: 25px;
   border: none;
   box-shadow: $box-shadow;
   &:hover {
-    background: lighten($color-primary, 35);
+    background: lighten($color-primary, 32);
     i {
       color: $color-primary;
     }

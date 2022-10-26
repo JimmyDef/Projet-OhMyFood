@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  .functioning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__btn {
+      margin: auto;
+      width: 30%;
+      i {
+        margin: 0 15px 0 25px;
+      }
+    }
+    h2 {
+      width: 100%;
+    }
+  }
+
+  .restaurants-list__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-restaurant {
+      width: 45%;
+    }
+    h2 {
+      width: 100%;
+    }
+  }
+  .footer {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
