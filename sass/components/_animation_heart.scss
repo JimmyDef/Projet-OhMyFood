@@ -3,15 +3,12 @@
   position: relative;
   width: 25px;
   height: 30px;
-
   i {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     font-size: 25px;
-
     transition: scale ease-out 250ms;
   }
-
   &__full {
     scale: 0;
     background: -webkit-linear-gradient($color-primary, $color-secondary);

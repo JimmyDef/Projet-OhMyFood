@@ -4,6 +4,7 @@ body {
   font-weight: 300;
 }
 
+// page d'accueil
 header,
 footer h2 {
   font-family: 'Shrikhand', cursive;
@@ -14,14 +15,11 @@ h1,
 h2 {
   font-size: 24px;
 }
-.btn-pink {
-  // font-size: 24px;
-  font-weight: 500;
-}
 
 h3 {
   font-size: 19px;
 }
+
 p {
   font-size: 18px;
 }
@@ -31,8 +29,34 @@ button {
   font-size: 16px;
   font-weight: 600;
 }
-
 .card-restaurant__tag-new {
   font-size: 15px;
   font-weight: 600;
+}
+
+// pages des menu
+
+.menus-list {
+  h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+p {
+  font-size: 16px;
+}
+
+// Toutes les pages
+
+.btn-pink {
+  // font-size: 24px;
+  font-weight: 500;
 }
