@@ -1,0 +1,64 @@
+.menu-img {
+  width: 100px;
+  height: 255px;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+.menus-list {
+  background: $color-bg-light;
+}
+.card-menu {
+}
+.card-menu__info {
+  width: 95%;
+  height: 72px;
+  margin: 10px auto;
+  border: solid black 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: $box-shadow;
+}
+.card-menu__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+.card-menu__box {
+  width: 120px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.card-menu__price {
+  width: 50px;
+  padding-top: 36px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.card-menu__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  background-color: $color-tertiary;
+  i {
+    height: 25px;
+    width: 25px;
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 50%;
+    color: $color-tertiary;
+    background: white;
+    transform: rotate(180deg);
+  }
+}

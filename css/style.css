@@ -173,7 +173,7 @@ button {
   text-align: left;
   border-radius: 25px;
   border: none;
-  box-shadow: 0px 5px 9px 0px rgb(226, 225, 225);
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
 }
 .functioning__btn:hover {
   background: #e9ddf8;
@@ -197,6 +197,7 @@ button {
 }
 
 header {
+  position: relative;
   height: 65px;
   padding: 0 20px;
   text-align: center;
@@ -205,9 +206,10 @@ header img {
   width: 160px;
   padding-top: 20px;
 }
-
-body {
-  min-width: 300px;
+header i {
+  position: absolute;
+  top: 32px;
+  left: 30px;
 }
 
 .functioning,
@@ -316,7 +318,7 @@ footer {
   max-width: 520px;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0px 5px 9px 0px rgb(226, 225, 225);
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
 }
 .card-restaurant img {
   width: 100%;
@@ -347,6 +349,73 @@ footer {
   text-align: center;
   color: #008766;
   background-color: #99e2d0;
+}
+
+.menu-img {
+  width: 100px;
+  height: 255px;
+}
+.menu-img img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.menus-list {
+  background: #f6f6f6;
+}
+
+.card-menu__info {
+  width: 95%;
+  height: 72px;
+  margin: 10px auto;
+  border: solid black 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
+}
+
+.card-menu__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.card-menu__box {
+  width: 120px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.card-menu__price {
+  width: 50px;
+  padding-top: 36px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.card-menu__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  background-color: #99e2d0;
+}
+.card-menu__check i {
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  text-align: center;
+  border-radius: 50%;
+  color: #99e2d0;
+  background: white;
+  transform: rotate(180deg);
 }
 
 @media screen and (min-width: 600px) {
