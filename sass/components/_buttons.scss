@@ -22,6 +22,7 @@
   margin: 0 auto 25px;
   width: 96%;
   height: 75px;
+  max-width: $max-width-tablet;
   text-align: left;
   border-radius: 25px;
   border: none;
@@ -32,6 +33,8 @@
       color: $color-primary;
     }
   }
+
+  // pastille 1 - 2 - 3
   .functioning__number {
     position: absolute;
     top: 24px;

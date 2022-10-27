@@ -1,10 +1,19 @@
+@media screen and (min-width: 600px) {
+  .footer {
+    ul {
+      li {
+        width: 45%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .functioning {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     &__btn {
-      margin: auto;
       width: 30%;
       i {
         margin: 0 15px 0 25px;
@@ -20,19 +29,19 @@
     flex-wrap: wrap;
     justify-content: center;
     .card-restaurant {
-      width: 45%;
+      width: 47%;
     }
     h2 {
       width: 100%;
     }
   }
+
   .footer {
     ul {
-      display: flex;
       justify-content: space-between;
+      li {
+        width: auto;
+      }
     }
   }
-}
-
-@media screen and (min-width: 600px) {
 }

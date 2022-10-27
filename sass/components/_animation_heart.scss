@@ -1,12 +1,14 @@
+// animation du coeur " favoris"
 .heart-box {
   position: relative;
   width: 25px;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  height: 30px;
+
   i {
     position: absolute;
+    bottom: 10px;
     font-size: 25px;
+
     transition: scale ease-out 250ms;
   }
 

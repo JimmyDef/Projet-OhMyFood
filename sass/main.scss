@@ -5,8 +5,9 @@
 @import './base/base';
 @import './base/typography';
 
-@import './components/buttons';
 @import './components/animation_heart';
+@import './components/animation-loader';
+@import './components/buttons';
 
 @import './layouts/header';
 @import './layouts/container';
@@ -14,9 +15,6 @@
 @import './layouts/footer';
 
 @import './pages/index';
-@import './pages/menu_la_note_enchantee.scss';
-@import './pages/menu_a_la_francaise.scss';
-@import './pages/menu_la_palette_du_gout.scss';
-@import './pages/menu_le_delice_des_sens.scss';
+@import './pages/menu.scss';
 
 @import './layouts/media_queries';

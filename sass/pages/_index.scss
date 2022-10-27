@@ -1,25 +1,29 @@
 // Section recherche + slogan
 .locate-restaurant {
   margin-bottom: 20px;
+
   text-align: center;
   background-color: $color-bg-light;
   h1 {
-    padding: 20px 50px 0px;
+    padding: 33px 50px 20px;
   }
   p {
     margin-bottom: 30px;
+    padding: 0 20px;
   }
   button {
     margin-bottom: 60px;
   }
 }
-
+// section fonctionnement
 .functioning {
-  padding: 50px 20px;
+  padding: 30px 20px;
   h2 {
     margin-bottom: 25px;
   }
 }
+
+// section des cards restaurant
 .restaurants-list {
   padding: 50px 0;
   background-color: $color-bg-light;
@@ -27,7 +31,7 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 25px 0;
   }
 }
 
@@ -35,6 +39,8 @@
   position: relative;
   width: 100%;
   height: 250px;
+  margin: auto;
+  max-width: $max-width-tablet;
   border-radius: 25px;
   overflow: hidden;
   box-shadow: $box-shadow;

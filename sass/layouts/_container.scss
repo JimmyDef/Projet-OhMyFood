@@ -1,5 +1,10 @@
+body {
+  min-width: 300px;
+}
+
 .functioning,
-.restaurants-list__container {
+.restaurants-list__container,
+.footer {
   max-width: 992px;
   margin: auto;
 }

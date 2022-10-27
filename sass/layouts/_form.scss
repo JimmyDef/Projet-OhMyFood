@@ -16,9 +16,6 @@
       border: none;
       text-align: center;
       @include shadowed-background;
-      // &:focus {
-      //   background-color: $color-bg-focus;
-      // }
     }
   }
 }

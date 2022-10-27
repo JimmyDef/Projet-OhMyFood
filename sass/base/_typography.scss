@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 header,
@@ -7,15 +9,30 @@ footer h2 {
   font-family: 'Shrikhand', cursive;
   font-size: 18px;
 }
-header {
-  font-size: 1.8em;
-}
-h1 {
+
+h1,
+h2 {
   font-size: 24px;
+}
+.btn-pink {
+  // font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 19px;
 }
 p {
   font-size: 18px;
 }
-input {
-  font-weight: 500;
+
+input,
+button {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-restaurant__tag-new {
+  font-size: 15px;
+  font-weight: 600;
 }
