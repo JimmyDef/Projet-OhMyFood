@@ -1,7 +1,9 @@
 // bouton section .locate-restaurant
 .btn-pink {
+  display: block;
   width: 220px;
   height: 50px;
+  margin: auto;
   color: white;
   border: none;
   border-radius: 25px;
@@ -48,6 +50,6 @@
   }
 
   i {
-    margin: 0 20px 0 35px;
+    margin: 0 15px 0 29px;
   }
 }

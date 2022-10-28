@@ -26,7 +26,7 @@ p {
 
 input,
 button {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 .card-restaurant__tag-new {
@@ -52,6 +52,9 @@ button {
 }
 p {
   font-size: 16px;
+}
+.card-menu__price {
+  font-weight: 600;
 }
 
 // Toutes les pages

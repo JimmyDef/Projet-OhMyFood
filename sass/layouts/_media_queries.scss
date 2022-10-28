@@ -1,3 +1,10 @@
+@media screen and (min-width: 323px) {
+  .functioning__btn {
+    i {
+      margin: 0 20px 0 35px;
+    }
+  }
+}
 @media screen and (min-width: 600px) {
   .footer {
     ul {
@@ -9,21 +16,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .functioning {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    &__btn {
-      width: 30%;
-      i {
-        margin: 0 15px 0 25px;
-      }
-    }
-    h2 {
-      width: 100%;
-    }
-  }
-
   .restaurants-list__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,6 +34,23 @@
       li {
         width: auto;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 865px) {
+  .functioning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__btn {
+      width: 30%;
+      i {
+        margin: 0 10px 0 25px;
+      }
+    }
+    h2 {
+      width: 100%;
     }
   }
 }

@@ -1,9 +1,12 @@
-// body {
-//   min-width: 300px;
-// }
+body {
+  min-width: 300px;
+}
 
+header,
 .functioning,
 .restaurants-list__container,
+.menus-list,
+.menu-img,
 .footer {
   max-width: 992px;
   margin: auto;
