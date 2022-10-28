@@ -5,9 +5,10 @@
 @import './base/base';
 @import './base/typography';
 
-@import './components/animation_heart';
-@import './components/animation-loader';
+@import './components/heart_animation';
+@import './components/loader';
 @import './components/buttons';
+@import './components/keyframes';
 
 @import './layouts/header';
 @import './layouts/container';
