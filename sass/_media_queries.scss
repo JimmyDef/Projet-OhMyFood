@@ -27,11 +27,31 @@
       width: 100%;
     }
   }
-  // .menus-list {
-  //   grid-template-columns: ;
-  //   grid-template: ;
-  // }
 
+  // page des menus
+  .menus-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+      width: 100%;
+      padding: 0 30px;
+    }
+    h3 {
+      font-size: 17px;
+    }
+
+    .card-menu {
+      width: 32%;
+      margin: auto;
+      h2 {
+        margin-left: 15px;
+      }
+    }
+    .btn-pink {
+      margin: 30px auto;
+    }
+  }
   .footer {
     ul {
       justify-content: space-between;

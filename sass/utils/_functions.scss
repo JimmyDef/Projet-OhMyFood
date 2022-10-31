@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+  .card-menu__info.card-menu__info--#{$i} {
+    animation-delay: $i * 150ms + $anim-delay;
+  }
+}

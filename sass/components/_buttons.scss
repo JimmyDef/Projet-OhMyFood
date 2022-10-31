@@ -12,8 +12,12 @@
   box-shadow: $box-shadow-darker;
   transition: all ease-in-out 350ms;
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.08);
     @include btn-bg-box-shadow;
+  }
+  &--menu {
+    width: 190px;
+    margin: 60px auto;
   }
 }
 

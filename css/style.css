@@ -1,3 +1,43 @@
+.card-menu__info.card-menu__info--1 {
+  animation-delay: 350ms;
+}
+
+.card-menu__info.card-menu__info--2 {
+  animation-delay: 500ms;
+}
+
+.card-menu__info.card-menu__info--3 {
+  animation-delay: 650ms;
+}
+
+.card-menu__info.card-menu__info--4 {
+  animation-delay: 800ms;
+}
+
+.card-menu__info.card-menu__info--5 {
+  animation-delay: 950ms;
+}
+
+.card-menu__info.card-menu__info--6 {
+  animation-delay: 1100ms;
+}
+
+.card-menu__info.card-menu__info--7 {
+  animation-delay: 1250ms;
+}
+
+.card-menu__info.card-menu__info--8 {
+  animation-delay: 1400ms;
+}
+
+.card-menu__info.card-menu__info--9 {
+  animation-delay: 1550ms;
+}
+
+.card-menu__info.card-menu__info--10 {
+  animation-delay: 1700ms;
+}
+
 *,
 *::after,
 *::before {
@@ -137,35 +177,6 @@ p {
   animation: cercle-scaling 3 1.5s alternate forwards;
 }
 
-@keyframes chargement {
-  99% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-@keyframes cercle-rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes cercle-scaling {
-  0% {
-    transform: scale(0.2);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(0.95);
-  }
-}
 .btn-pink {
   display: block;
   width: 220px;
@@ -180,10 +191,14 @@ p {
   transition: all ease-in-out 350ms;
 }
 .btn-pink:hover {
-  transform: scale(1.15);
+  transform: scale(1.08);
   background: #9458dc;
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
   box-shadow: 0px 5px 9px 0px rgb(138, 138, 138);
+}
+.btn-pink--menu {
+  width: 190px;
+  margin: 60px auto;
 }
 
 .functioning__btn {
@@ -219,6 +234,45 @@ p {
   margin: 0 15px 0 29px;
 }
 
+@keyframes chargement {
+  99% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes cercle-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cercle-scaling {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes menu-appears {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header {
   position: relative;
   height: 65px;
@@ -279,7 +333,7 @@ footer {
 }
 
 .footer {
-  margin: auto;
+  margin: -35px auto;
   padding: 25px 25px 40px;
 }
 .footer h2 {
@@ -390,8 +444,7 @@ footer {
 }
 
 .menus-list {
-  width: 100%;
-  padding: 30px 20px;
+  padding: 30px 10px;
   background: #f6f6f6;
   border-radius: 30px 30px 0 0;
   transform: translateY(-35px);
@@ -408,17 +461,6 @@ footer {
   bottom: 0;
 }
 
-.card-menu__info {
-  width: 100%;
-  height: 72px;
-  margin: 10px auto;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
-}
 .card-menu h2 {
   position: relative;
   margin-bottom: 20px;
@@ -432,17 +474,62 @@ footer {
   width: 45px;
   background-color: #99e2d0;
 }
+.card-menu__info {
+  height: 72px;
+  margin: 15px auto;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
+  animation: menu-appears 1s both;
+}
+.card-menu__info--1 {
+  animation-delay: 350ms;
+}
+.card-menu__info--2 {
+  animation-delay: 500ms;
+}
+.card-menu__info--3 {
+  animation-delay: 650ms;
+}
+.card-menu__info--4 {
+  animation-delay: 800ms;
+}
+.card-menu__info--5 {
+  animation-delay: 950ms;
+}
+.card-menu__info--6 {
+  animation-delay: 1100ms;
+}
+.card-menu__info--7 {
+  animation-delay: 1250ms;
+}
+.card-menu__info--8 {
+  animation-delay: 1400ms;
+}
+.card-menu__info--9 {
+  animation-delay: 1550ms;
+}
+.card-menu__info--10 {
+  animation-delay: 1700ms;
+}
+.card-menu__title-and-price {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60%;
+  flex-grow: 1;
+}
 .card-menu__title {
-  width: 100%;
+  min-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   padding-left: 15px;
 }
 .card-menu__title h3,
 .card-menu__title p {
-  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -450,24 +537,20 @@ footer {
 .card-menu__title h3 {
   margin-bottom: 5px;
 }
-.card-menu__box {
-  display: flex;
-  transform: translateX(70px);
-  transition: all 500ms ease-in-out;
-}
 .card-menu__price {
-  width: 50px;
-  padding-top: 36px;
+  padding: 36px 10px 0 10px;
   text-align: center;
 }
 .card-menu__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
+  position: relative;
+  min-width: 0px;
   background-color: #99e2d0;
+  transition: all 500ms ease-in-out;
 }
 .card-menu__check i {
+  position: absolute;
+  left: 25px;
+  top: 25px;
   height: 25px;
   width: 25px;
   padding-top: 4px;
@@ -476,12 +559,12 @@ footer {
   color: #99e2d0;
   background: white;
   transform: rotate(-360deg);
-  transition: all 500ms 100ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
-.card-menu__info:hover .card-menu__box {
-  transform: translateX(0px);
+.card-menu__info:hover .card-menu__check {
+  min-width: 75px;
 }
-.card-menu__info:hover .card-menu__box i {
+.card-menu__info:hover .card-menu__check i {
   transform: rotate(0);
 }
 
@@ -506,6 +589,27 @@ footer {
   }
   .restaurants-list__container h2 {
     width: 100%;
+  }
+  .menus-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menus-list__title {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .menus-list h3 {
+    font-size: 17px;
+  }
+  .menus-list .card-menu {
+    width: 32%;
+    margin: auto;
+  }
+  .menus-list .card-menu h2 {
+    margin-left: 15px;
+  }
+  .menus-list .btn-pink {
+    margin: 30px auto;
   }
   .footer ul {
     justify-content: space-between;
