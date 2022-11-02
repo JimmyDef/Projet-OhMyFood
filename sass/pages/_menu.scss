@@ -15,7 +15,7 @@
   &__title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     .heart-box {
       margin-right: 11px;
       i {
@@ -27,7 +27,7 @@
 .card-menu {
   h2 {
     position: relative;
-    margin-bottom: 20px;
+    margin: 45px 0 20px;
     &::after {
       content: '';
       position: absolute;
