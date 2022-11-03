@@ -4,8 +4,11 @@ footer {
 }
 
 .footer {
-  margin: -35px auto;
+  margin: 0 auto;
   padding: 25px 25px 40px;
+  &--menu {
+    margin-top: -35px;
+  }
   h2 {
     margin-bottom: 20px;
   }

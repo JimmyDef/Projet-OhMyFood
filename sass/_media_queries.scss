@@ -19,7 +19,6 @@
   .restaurants-list__container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     .card-restaurant {
       width: 47%;
     }
@@ -48,9 +47,6 @@
         margin-left: 15px;
       }
     }
-    .btn-pink {
-      margin: 30px auto;
-    }
   }
   .footer {
     ul {
@@ -66,7 +62,6 @@
   .functioning {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     &__btn {
       width: 30%;
       i {

@@ -7,10 +7,10 @@
     position: absolute;
     bottom: 15px;
     font-size: 25px;
-    transition: scale ease-out 250ms;
+    transition: transform ease-out 250ms;
   }
   &__full {
-    scale: 0;
+    transform: scale(0);
     background: -webkit-linear-gradient($color-primary, $color-secondary);
     -webkit-background-clip: text;
     background-clip: text;
@@ -19,7 +19,7 @@
 
   &:hover {
     .heart-box__full {
-      scale: 1.08;
+      transform: scale(1.08);
     }
   }
 }

@@ -2,7 +2,6 @@
 .locate-restaurant {
   margin-bottom: 20px;
   padding-bottom: 60px;
-
   text-align: center;
   background-color: $color-bg-light;
   h1 {
@@ -73,5 +72,8 @@
     text-align: center;
     color: $color-tag-new;
     background-color: $color-bg-tag-new;
+  }
+  &:hover {
+    box-shadow: $box-shadow-highlight;
   }
 }
