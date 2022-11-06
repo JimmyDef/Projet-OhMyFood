@@ -4,12 +4,15 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: #000000;
+}
+a:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -17,14 +20,14 @@ ul {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 300;
 }
 
 header,
 footer h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   font-size: 18px;
 }
 
@@ -53,7 +56,7 @@ button {
 }
 
 .menus-list h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   font-size: 28px;
 }
 .menus-list h2 {
@@ -94,8 +97,8 @@ p {
 }
 .heart-box__full {
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
@@ -103,8 +106,8 @@ p {
 }
 .heart-box:hover .heart-box__full {
   -webkit-transform: scale(1.08);
-      -ms-transform: scale(1.08);
-          transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .loader {
@@ -114,7 +117,7 @@ p {
   width: 100%;
   background-color: rgba(179, 179, 179, 0.856);
   -webkit-animation: loading 3s forwards;
-          animation: loading 3s forwards;
+  animation: loading 3s forwards;
 }
 .loader__ctn {
   position: absolute;
@@ -123,8 +126,8 @@ p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .loader__cercle {
   height: 100%;
@@ -136,17 +139,23 @@ p {
   border-top-style: dashed;
   border-radius: 50%;
   -webkit-animation: cercle-rotation 2 2s alternate ease-in-out;
-          animation: cercle-rotation 2 2s alternate ease-in-out;
+  animation: cercle-rotation 2 2s alternate ease-in-out;
 }
 .loader__pupil {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9356dc),
+    to(#ff79da)
+  );
   background: -o-linear-gradient(#9356dc, #ff79da);
   background: linear-gradient(#9356dc, #ff79da);
   border-radius: 50%;
   height: 100%;
   width: 100%;
   -webkit-animation: cercle-scaling 1.5s alternate 2;
-          animation: cercle-scaling 1.5s alternate 2;
+  animation: cercle-scaling 1.5s alternate 2;
 }
 
 .btn-main {
@@ -158,21 +167,28 @@ p {
   border: none;
   border-radius: 25px;
   background: #9356dc;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#9356dc),
+    to(#ff79da)
+  );
   background: -o-linear-gradient(bottom, #9356dc 0%, #ff79da 100%);
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   -webkit-box-shadow: 0px 5px 9px 0px rgb(196, 196, 196);
-          box-shadow: 0px 5px 9px 0px rgb(196, 196, 196);
+  box-shadow: 0px 5px 9px 0px rgb(196, 196, 196);
   -webkit-transition: all ease-in-out 350ms;
   -o-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms;
 }
 .btn-main:hover {
+  cursor: pointer;
   background: #9458dc;
   background: -o-linear-gradient(95deg, #a16be0 0%, #ff93e1 100%);
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
   -webkit-box-shadow: 0px 5px 9px 0px rgb(138, 138, 138);
-          box-shadow: 0px 5px 9px 0px rgb(138, 138, 138);
+  box-shadow: 0px 5px 9px 0px rgb(138, 138, 138);
 }
 .btn-main--menu {
   width: 190px;
@@ -190,12 +206,13 @@ p {
   border-radius: 25px;
   border: none;
   -webkit-box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
-          box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
   transition: all 300ms;
 }
 .functioning__btn:hover {
+  cursor: pointer;
   background: #e9ddf8;
 }
 .functioning__btn:hover i {
@@ -219,94 +236,94 @@ p {
 @-webkit-keyframes loading {
   99% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 
 @keyframes loading {
   99% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
 }
 @-webkit-keyframes cercle-rotation {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes cercle-rotation {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes cercle-scaling {
   0% {
     -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    transform: scale(0.2);
   }
   50% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(0.95);
-            transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 @keyframes cercle-scaling {
   0% {
     -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    transform: scale(0.2);
   }
   50% {
     -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(0.95);
-            transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 @-webkit-keyframes menu-appears {
   0% {
     opacity: 0;
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @keyframes menu-appears {
   0% {
     opacity: 0;
     -webkit-transform: translateY(25px);
-            transform: translateY(25px);
+    transform: translateY(25px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 header {
@@ -340,21 +357,21 @@ header,
   width: 100%;
   background: #eaeaea;
   -webkit-box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
-          box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
+  box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .locate-restaurant__form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .locate-restaurant__form label i {
   margin-right: 3px;
@@ -366,7 +383,7 @@ header,
   text-align: center;
   background: #eaeaea;
   -webkit-box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
-          box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
+  box-shadow: inset 0px 8px 6px -6px rgba(148, 136, 136, 0.75);
 }
 
 footer {
@@ -389,7 +406,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .footer ul li {
   margin: 5px 0;
@@ -440,8 +457,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 25px 0;
 }
 
@@ -454,7 +471,7 @@ footer {
   border-radius: 25px;
   overflow: hidden;
   -webkit-box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
-          box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -464,9 +481,9 @@ footer {
   height: 70%;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0 60%;
-     object-position: 0 60%;
+  object-position: 0 60%;
 }
 .card-restaurant__info {
   height: 30%;
@@ -475,11 +492,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: white;
 }
 .card-restaurant__title h3 {
@@ -499,7 +516,7 @@ footer {
 }
 .card-restaurant:hover {
   -webkit-box-shadow: 0px 5px 9px 0px #9356dc;
-          box-shadow: 0px 5px 9px 0px #9356dc;
+  box-shadow: 0px 5px 9px 0px #9356dc;
 }
 
 .menu-img {
@@ -508,7 +525,7 @@ footer {
 }
 .menu-img img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -518,16 +535,16 @@ footer {
   background: #f6f6f6;
   border-radius: 30px 30px 0 0;
   -webkit-transform: translateY(-35px);
-      -ms-transform: translateY(-35px);
-          transform: translateY(-35px);
+  -ms-transform: translateY(-35px);
+  transform: translateY(-35px);
 }
 .menus-list__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .menus-list__title .heart-box {
   margin-right: 11px;
@@ -540,7 +557,7 @@ footer {
   margin: 45px 0 20px;
 }
 .menus-list .card-menu h2::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -559,69 +576,69 @@ footer {
   overflow: hidden;
   background-color: white;
   -webkit-box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
-          box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
+  box-shadow: 0px 5px 9px 0px rgb(211, 211, 211);
   -webkit-animation: menu-appears 1s both;
-          animation: menu-appears 1s both;
+  animation: menu-appears 1s both;
 }
 .menus-list .card-menu__info--1 {
   -webkit-animation-delay: 350ms;
-          animation-delay: 350ms;
+  animation-delay: 350ms;
 }
 .menus-list .card-menu__info--2 {
   -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  animation-delay: 500ms;
 }
 .menus-list .card-menu__info--3 {
   -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  animation-delay: 650ms;
 }
 .menus-list .card-menu__info--4 {
   -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  animation-delay: 800ms;
 }
 .menus-list .card-menu__info--5 {
   -webkit-animation-delay: 950ms;
-          animation-delay: 950ms;
+  animation-delay: 950ms;
 }
 .menus-list .card-menu__info--6 {
   -webkit-animation-delay: 1100ms;
-          animation-delay: 1100ms;
+  animation-delay: 1100ms;
 }
 .menus-list .card-menu__info--7 {
   -webkit-animation-delay: 1250ms;
-          animation-delay: 1250ms;
+  animation-delay: 1250ms;
 }
 .menus-list .card-menu__info--8 {
   -webkit-animation-delay: 1400ms;
-          animation-delay: 1400ms;
+  animation-delay: 1400ms;
 }
 .menus-list .card-menu__info--9 {
   -webkit-animation-delay: 1550ms;
-          animation-delay: 1550ms;
+  animation-delay: 1550ms;
 }
 .menus-list .card-menu__info--10 {
   -webkit-animation-delay: 1700ms;
-          animation-delay: 1700ms;
+  animation-delay: 1700ms;
 }
 .menus-list .card-menu__info:hover .card-menu__check {
   min-width: 75px;
 }
 .menus-list .card-menu__info:hover .card-menu__check i {
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-          transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
 }
 .menus-list .card-menu__title-and-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-width: 60%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .menus-list .card-menu__title {
   min-width: 60%;
@@ -630,17 +647,17 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-left: 15px;
 }
 .menus-list .card-menu__title h3,
 .menus-list .card-menu__title p {
   -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -671,8 +688,8 @@ footer {
   color: #99e2d0;
   background: white;
   -webkit-transform: rotate(-360deg);
-      -ms-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
   -webkit-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -692,10 +709,10 @@ footer {
   .restaurants-list__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .restaurants-list__container .card-restaurant {
     width: 47%;
@@ -708,7 +725,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .menus-list__title {
     width: 100%;
@@ -726,8 +743,8 @@ footer {
   }
   .footer ul {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .footer ul li {
     width: auto;
@@ -739,7 +756,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .functioning__btn {
     width: 30%;

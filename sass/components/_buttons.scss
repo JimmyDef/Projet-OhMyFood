@@ -13,6 +13,7 @@
   transition: all ease-in-out 350ms;
   &:hover {
     @include btn-bg-box-shadow;
+    cursor: pointer;
   }
   &--menu {
     width: 190px;
@@ -34,6 +35,7 @@
   box-shadow: $box-shadow;
   transition: all 300ms;
   &:hover {
+    cursor: pointer;
     background: lighten($color-primary, 32);
     i {
       color: $color-primary;
